@@ -1,0 +1,59 @@
+.submitContainer {
+  margin: 10px 0 4px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .submitLabel {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+
+    .placementFixer {
+      width: 20%;
+
+      button, input[type=submit] {
+        // width: 10%;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        border: none;
+        outline: none;
+        min-width: 15px;
+        text-align: center;
+        cursor: pointer;
+        white-space: nowrap;
+        height: 25px;
+        line-height: 25px;
+        padding: 0 14px;
+        box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+        background: #0f2ff1;
+        border-radius: 4px;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .025em;
+        color: #fff;
+        -webkit-transition: all .15s ease;
+        -o-transition: all .15s ease;
+        transition: all .15s ease;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+        
+        &:hover {
+          background: #2196f3;
+          box-shadow: 0 6px 8px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.15);
+        }
+
+        &:active {
+          background: #2196f3;
+          margin-top: 1px;
+        }
+      }
+    }
+  }			
+}

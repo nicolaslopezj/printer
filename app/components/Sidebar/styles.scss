@@ -1,0 +1,12 @@
+.sidebarContainer {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 6px 10px rgba(36,37,38,0.13);
+    transition: all 0.25s ease 0s, transform 0.25s ease 0s, transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+
+    &:hover {
+        box-shadow: 5px 12px 20px rgba(36,37,38,0.13);
+    }
+}

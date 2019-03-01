@@ -1,0 +1,21 @@
+{
+  "name": "sodlab-pos",
+  "productName": "Sodlab-POS",
+  "version": "0.14.1",
+  "description": "Sodlab application for printing receipts and documents",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "Sodlab",
+    "email": "javier.gutierrez@sodlab.com",
+    "url": "https://github.com/Sodlab/printer"
+  },
+  "scripts": {
+    "electron-rebuild": "node -r babel-register ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "npm run electron-rebuild"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "node-thermal-printer": "^2.0.0",
+    "printer": "^0.2.2"
+  }
+}

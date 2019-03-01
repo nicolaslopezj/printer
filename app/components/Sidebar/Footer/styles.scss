@@ -1,0 +1,56 @@
+.footerContainer {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* draw the background for the slider */
+.lbl {
+	position: relative;
+	display: block;
+	height: 20px;
+	width: 44px;
+	background: #c7c7c7;
+	border-radius: 100px;
+	cursor: pointer;
+	transition: all 0.25s ease 0s, transform 0.25s ease 0s, transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+	-webkit-tap-highlight-color: transparent;
+}
+/* draw a circle on top of the slider(label) */
+.lbl:after {
+	position: absolute;
+	left: -2px;
+	top: -3px;
+	display: block;
+	width: 26px;
+	height: 26px;
+	border-radius: 100px;
+	background: #ffffff;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15), 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+	content: '';
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+	-webkit-tap-highlight-color: transparent;
+}
+.lbl:active:after {
+	transform: scale(1.15, 0.85);
+}
+.cbx:checked ~ label {
+	background: #0f6696;
+}
+.cbx:checked ~ label:after {
+	left: 20px;
+	background: #1bb9e7;
+}
+.cbx:disabled ~ label {
+	background: #9d9c9c;
+}
+.cbx:disabled ~ label:after {
+	background: #ffffff;
+}
+.hidden {
+	display: none;
+}

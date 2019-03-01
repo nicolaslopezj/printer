@@ -1,0 +1,102 @@
+.pageContainer {
+	height: 100%;
+	flex: 4;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	overflow-y: scroll;
+	
+	.titleContainer {
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+
+		h1 {
+			margin-left: 20px;
+			font-size: 22px;
+		}
+	}
+
+	.formContainer {
+		width: 80%;
+		// height: 70%;
+		display: flex;
+		border-radius: 5px;
+		box-shadow: 0px 3px 5px rgba(36,37,38,0.13);
+		transition: all 0.25s ease 0s, transform 0.25s ease 0s, transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+
+		&:hover {
+			box-shadow: 0px 12px 20px rgba(36,37,38,0.13);
+		}
+
+		form {
+			width: 100%;
+			margin: 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+
+			.submitContainer {
+				margin: 10px 0 4px;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+
+				.submitLabel {
+					width: 80%;
+					height: 80%;
+					display: flex;
+					flex-direction: column;
+
+					.placementFixer {
+						width: 20%;
+
+						button, input[type=submit] {
+							// width: 10%;
+							display: -ms-inline-flexbox;
+							display: inline-flex;
+							-ms-flex-align: center;
+							align-items: center;
+							-ms-flex-pack: center;
+							justify-content: center;
+							border: none;
+							outline: none;
+							min-width: 15px;
+							text-align: center;
+							cursor: pointer;
+							white-space: nowrap;
+							height: 25px;
+							line-height: 25px;
+							padding: 0 14px;
+							box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+							background: #1bb9e7;
+							border-radius: 4px;
+							font-size: 13px;
+							font-weight: 600;
+							text-transform: uppercase;
+							letter-spacing: .025em;
+							color: #fff;
+							-webkit-transition: all .15s ease;
+							-o-transition: all .15s ease;
+							transition: all .15s ease;
+							-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+							
+							&:hover {
+								background: rgba(27, 185, 231, .8);
+								box-shadow: 0 6px 8px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.15);
+							}
+
+							&:active {
+								background: rgba(27, 185, 231, .6);
+								margin-top: 1px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

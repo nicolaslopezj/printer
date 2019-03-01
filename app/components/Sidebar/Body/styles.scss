@@ -1,0 +1,35 @@
+.body {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+
+    .sidebarButton {
+        width: 100%;
+        height: 73px;
+        margin: 5px 0;
+        // color: #4A4949;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        background-color: Transparent;
+
+        span {
+            width: 100%;
+            margin: 0 30px;
+            display: flex;
+            align-items: center;
+
+            a {
+                display: flex;
+
+                &:focus {
+                    outline: none;
+                }
+
+                svg {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

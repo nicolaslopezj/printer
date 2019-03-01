@@ -1,0 +1,18 @@
+.appContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: all 0.25s ease 0s, transform 0.25s ease 0s, transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+}
+
+.main-container {
+    height: 100%;
+    flex: 4;
+}
+
+.configurationContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,1 @@
+AWS_PROFILE=sodlab-developer npm run build && build --publish always
